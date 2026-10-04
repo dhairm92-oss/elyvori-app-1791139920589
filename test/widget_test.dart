@@ -6,6 +6,6 @@ import '../lib/core/theme/app_colors.dart';
 void main() {
   testWidgets('the palette renders', (tester) async {
     await tester.pumpWidget(const MaterialApp(home: ColoredBox(color: AppColors.obsidian)));
-    expect(find.byType(ColoredBox), findsOneWidget);
+    expect(find.byType(ColoredBox), findsNWidgets(2));
   });
 }
